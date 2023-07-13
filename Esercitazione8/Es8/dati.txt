@@ -1,0 +1,38 @@
+100
+10000
+6
+2
+
+0.8
+0.6
+1
+1000
+
+1
+1.5
+40
+
+1
+1
+0.01
+0.01
+
+
+  ReadInput >> nblk;      //numero di blocchi 
+  ReadInput >> nstep;     //numero di step SA: 10000, !SA: 100000
+  ReadInput >> L;         // step of the uniform
+  ReadInput >> x0;        // x iniziale, ideale intorno a 1
+
+  ReadInput >> mu;        // centro della gaussiana: 0.8 per SA, 1 per !SA
+  ReadInput >> sgm;       // larghezza della gaussiana: 0.6 per SA, 0.5 per !SA 
+  ReadInput >> SA;        // Simulated Annealing :1 
+  ReadInput >> histofill_blk // numero di posizioni salvate per blocco: 1000, 100 se faccio !SA
+
+  ReadInput >> beta;      // temp
+  ReadInput >> db;        // delta
+  ReadInput >> step_in_beta; // step per ogni beta
+
+  ReadInput >> Lmu;       // larghezza iniziale passi mu
+  ReadInput >> Lsgm;      // idem per sigma
+  ReadInput >> errMu;     // errore con cui voglio determinare mu
+  ReadInput >> errSgm;    // errore con cui voglio determinare sgm
